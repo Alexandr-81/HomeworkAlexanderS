@@ -78,6 +78,7 @@ text-transform: uppercase;
 }
 
 .advantage .text {
+    
     color: var(--text-color-alt);
     width: 270px;
     font-family: 'Roboto';
