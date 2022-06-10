@@ -5,161 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/normalize.css" />
     <link rel="stylesheet" href="./CSS/common.css" />
     <link rel="stylesheet" href="./CSS/partfolio.css" />
   </head>
   <body>
-    <header>
-      <a lang="en" href="/" class="logo"><span>Web</span>Studio</a>
-      <nav>
+    <header class="header content">
+      <a lang="en" href="/" class="header-logo"><span>Web</span>Studio</a>
+      <nav class="header-sitenav">
         <ul class="site-nav list">
-          <li><a href="/" class="link">Студия</a></li>
-          <li><a href="./partfolio.html" class="link current">Портфолио</a></li>
-          <li><a href="/" class="link">Контакты</a></li>
+          <li class="sitenav-item"><a href="/" class="link current">Студия</a></li>
+          <li class="sitenav-item"><a href="./partfolio.html" class="link">Портфолио</a></li>
+          <li class="sitenav-item"><a href="/" class="link">Контакты</a></li>
         </ul>
       </nav>
-      <nav>
+      <nav class="header-outnav">
         <ul class="out-nav list">
-          <li>
-            <img src="./images/email.svg" alt="e-mail" />
+          <li class="outnav-item">
             <a href="info@devstudio.com" class="link">info@devstudio.com</a>
           </li>
-          <li>
-            <img src="./images/phone.svg" alt="phone" />
+          <li class="outnav-item">
             <a href="tel:+380961111111" class="link">+38 (096) 111-11-11 </a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="Ссылка">
+      <section class="buttons">
         <h1>Cсылка</h1>
         <ul>
           <li>
-            <button type="button">
-              Все
-              <img src="./images/Rectangle10.svg" alt="Квадрат" width="73" />
-            </button>
+            <button type="button">Все</button>
           </li>
           <li>
-            <button type="button">
-              Веб-сайты
-              <img src="./images/Rectangle10.svg" alt="Квадрат" width="73" />
-            </button>
+            <button type="button">Веб-сайты</button>
           </li>
           <li>
-            <button type="button">
-              Приложения
-              <img src="./images/Rectangle10.svg" alt="Квадрат" width="73" />
-            </button>
+            <button type="button">Приложения</button>
           </li>
           <li>
-            <button type="button">
-              Дизайн
-              <img src="./images/Rectangle10.svg" alt="Квадрат" width="73" />
-            </button>
+            <button type="button">Дизайн</button>
           </li>
           <li>
-            <button type="button">
-              Маркетинг
-              <img src="./images/Rectangle10.svg" alt="Квадрат" width="73" />
-            </button>
+            <button type="button">Маркетинг</button>
           </li>
         </ul>
       </section>
-      <section class="class">
+      <section class="cards">
         <h1>Инфо по видам проекта</h1>
         <ul>
           <li>
-            <div id="website">
-              <h2>Технокряк</h2>
-              <p>
-                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                Все это позволит посетителю получить исчерпывающие сведения о компании или частном
-                лице.
-              </p>
-              <p>Веб-сайт</p>
-              <img src="./images/container.png" alt="Квадрат" width="370" />
-            </div>
+            <img src="./images/techno.jpg" alt="techno" width="370" />
+            <h2>Технокряк</h2>
+            <p>Веб-сайт</p>
           </li>
           <li>
-            <div id="disign">
-              <h2>Постер New Orlean vs Golden Star</h2>
-              <p>Дизайн</p>
-              <img src="./images/basketball.jpg" alt="Баскетбол" width="370" />
-              <img src="./images/container.png" alt="Квадрат" width="370" />
-            </div>
+            <img src="./images/basketball.jpg" alt="Баскетбол" width="370" />
+            <h2>Постер New Orlean vs Golden Star</h2>
+            <p>Дизайн</p>
           </li>
           <li>
-            <div id="application1">
-              <h2>Ресторан Seafood</h2>
-              <p>Приложение</p>
-              <img src="./images/seafood.jpg" alt="Морская еда" width="370" />
-              <img src="./images/container.png" alt="Квадрат" width="370" />
-            </div>
+            <img src="./images/seafood.jpg" alt="Морская еда" width="370" />
+            <h2>Ресторан Seafood</h2>
+            <p>Приложение</p>
           </li>
           <li>
-            <div id="marketing">
-              <h2>Проект Prime</h2>
-              <p>Маркетинг</p>
-              <img src="./images/headphones.jpg" alt="Наушники" width="370" />
-              <img src="./images/container.png" alt="Квадрат" width="370" />
-            </div>
+            <img src="./images/headphones.jpg" alt="Наушники" width="370" />
+            <h2>Проект Prime</h2>
+            <p>Маркетинг</p>
           </li>
           <li>
-            <div id="application2">
-              <h2>Проект Boxes</h2>
-              <p>Приложение</p>
-              <img src="./images/boxes.jpg" alt="Коробки" width="370" />
-              <img src="./images/container.png" alt="Квадрат" width="370" />
-            </div>
+            <img src="./images/boxes.jpg" alt="Коробки" width="370" />
+            <h2>Проект Boxes</h2>
+            <p>Приложение</p>
           </li>
-          <li>
-            <div></div>
-          </li>
-          <li>
-            <div></div>
-          </li>
-          <li>
-            <div></div>
-          </li>
-          <li>
-            <div></div>
-          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="footer content">
       <div class="contacts">
-        <a lang="en" href="/" class="logo"><span>Web</span>Studio</a>
+        <a lang="en" href="/" class="footer-logo"><span>Web</span>Studio</a>
         <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
-        <a href="info@example.com" class="info">info@example.com</a>
-        <a href="tel:+380991111111" class="info">+38 (099) 111-11-11 </a>
-      </div>
-      <div>
-        <h4>присоединяйтесь</h4>
-        <ul class="footer-nav list">
-          <li>
-            <a href="/" class="link">
-              <img src="./images/instagram--2.svg" alt="Инстаграм" width="44" />
-            </a>
-          </li>
-          <li>
-            <a href="/" class="link">
-              <img src="./images/twitter--2.svg" alt="Твиттер" width="44" />
-            </a>
-          </li>
-          <li>
-            <a href="/" class="link">
-              <img src="./images/facebook--2.svg" alt="Фейсбук" width="44" />
-            </a>
-          </li>
-          <li>
-            <a href="/" class="link">
-              <img src="./images/linkedin--2.svg" alt="Линкедин" width="44" />
-            </a>
-          </li>
-        </ul>
+        <a href="info@example.com" class="info mail">info@example.com</a>
+        <p class="not">not</p>
+        <a href="tel:+380991111111" class="info tel">+38 (099) 111-11-11 </a>
       </div>
     </footer>
   </body>
