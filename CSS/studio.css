@@ -6,23 +6,9 @@
 
 /* 2.1 hero */
 .hero {
-    background-color: var(--color-background-main);
-}
-
-.hero-figure {
-    display: flex;
-    flex-flow: column;
-}
-
-.img {
-    height: 600;
-    padding-top: 0px;
-    padding-left: 0px;
-}
-
-.figcaption-title {
-    padding: 20px;
-    text-align: center;
+    background: url('/images/img.jpg');
+    width: 1600px;
+    height: 600px;
 }
 
 .hero .title {
@@ -32,14 +18,19 @@
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    /* or 136% */
-    text-align: center;
+    margin: 0 0;
+    padding-left: 452px;
+    padding-top: 200px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
+.div-button {
+    padding-left: 700px;
+}
+
 /* button */
-.button {
+.hero .button {
     background-color: var(--color-accent-primary);
     color: var(--color-text-alternative);
     border: none;
@@ -51,11 +42,11 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    /* identical to box height, or 188% */
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+   
 }
 
 /* 2.2 advantage */
@@ -125,7 +116,6 @@
     text-transform: uppercase;
 }
 
-
 .task-menu {
     display: flex;
 }
@@ -140,7 +130,7 @@
     padding-left: 215px;
 }
 
-.task .title {
+.autors .title {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
